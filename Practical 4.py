@@ -23,12 +23,10 @@ else : print("Fail")
 Aggregate = ((int(English) + int(Maths) + int(Chemistry) + int(Physics) + int(BEE)) / 500)*(100)
 print("The Aggregate is : ", Aggregate)
 
-if [English or Maths or Chemistry or Physics or BEE < 40]:
-    print("Failed the exam ")
 
-    if Aggregate > 75:
-        print("The grade is Distinction ")
-    elif Aggregate >= 60:
-        print("The grade is First Division")
-    elif Aggregate >= 50:
-        print("The grade is Second Division")
+if Aggregate > 75:
+    print("The grade is Distinction ")
+elif Aggregate >= 60:
+    print("The grade is First Division")
+elif Aggregate >= 50:
+    print("The grade is Second Division")
